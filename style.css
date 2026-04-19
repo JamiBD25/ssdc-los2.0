@@ -157,4 +157,8 @@ img {
         display: block;
         overflow-x: auto;
     }
+    th, td {
+        font-size: 12px; /* 🔥 ছোট করা */
+        padding: 6px;    /* 🔥 কমানো */
+    }
 }
