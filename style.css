@@ -82,7 +82,7 @@ section {
 
 /* 🔷 TABLE DESIGN */
 table {
-    width: 80%;
+    width: 100%;
     margin: auto;
     border-collapse: collapse;
 
@@ -92,6 +92,7 @@ table {
 th, td {
     border: 1px solid white;
     padding: 10px;
+    text-align: Center;
 }
 
 /* 🔷 IMAGE */
