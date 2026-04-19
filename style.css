@@ -63,6 +63,13 @@ body {
     animation: fadeIn 1.5s ease;
 }
 
+/* 🔥 Title font */
+.title {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 2px;
+    color: #00aaff;
+}
+
 /* 🔷 SECTION */
 section {
     padding: 60px 20px;
