@@ -411,3 +411,17 @@ margin-top:30px;
 flex-direction:column;
 }
 }
+/* 🔷 logo style */
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
+height:40px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #00aaff;
+}
