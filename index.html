@@ -1,117 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 🔥 Mobile responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoS 2.0</title>
+
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <Title>League of Spars</Title>
-    <!-- 🔥 CSS -->
-    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<!-- 🔷 NAVBAR -->
 <nav class="navbar">
-    <div class="logo">
-        <img src="https://i.postimg.cc/sByQd8MF/logo.png">
-        <h2>LoS 2.0</h2>
-    </div>
+<h2>LoS 2.0</h2>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-    <ul class="nav-links" id="navLinks">
-        <li onclick="scrollToSection('team')">Team Rank</li>
-        <li onclick="scrollToSection('speaker')">Speakers Rank</li>
-        <li onclick="scrollToSection('teamBehind')">Team Behind</li>
-        <li onclick="scrollToSection('contact')">Contact</li>
-    </ul>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="teams.html">Teams</a></li>
+<li><a href="speakers.html">Speakers</a></li>
+<li><a href="heads.html">Heads</a></li>
+</ul>
 </nav>
 
-<!-- 🔷 HOME -->
 <section class="home">
-    <h2 class="creep-title">League of Spars</h2>
-    <p>Season 2.0</p>
-    <strong>Arranged by </br> Society For School Debaters of Chattogram </strong> 
-
-<!-- 🔷 TEAM -->
-<section id="team">
-    <h2>🏆 Team Ranking</h2>
-<div class="table-container">
-
-    <table>
-        <tr><th>Rank</th><th>Team</th><th>Points</th></tr>
-        <tr><td>1</td><td>Alpha Debaters</td><td>95</td></tr>
-        <tr><td>2</td><td>Voice of Logic</td><td>90</td></tr>
-        <tr><td>3</td><td>Debate Masters</td><td>85</td></tr>
-        <tr><td>4</td><td>Argument Kings</td><td>80</td></tr>
-        <tr><td>5</td><td>Rising Minds</td><td>75</td></tr>
-    </table>
-</div>
+<h1 class="title">Leagues of Spears 2.0</h1>
+<p>Arranged by Society for School Debaters of Chattogram</p>
 </section>
 
-<!-- 🔷 SPEAKER -->
-<section id="speaker">
-    <h2>🎤 Speakers Ranking</h2>
-<div class="table-container">
-    <table>
-        <tr><th>Rank</th><th>Name</th><th>Score</th></tr>
-        <tr><td>1</td><td>Rahim</td><td>98</td></tr>
-        <tr><td>2</td><td>Karim</td><td>95</td></tr>
-        <tr><td>3</td><td>Jannat</td><td>93</td></tr>
-        <tr><td>4</td><td>Sadia</td><td>90</td></tr>
-        <tr><td>5</td><td>Hasan</td><td>88</td></tr>
-        <tr><td>6</td><td>Nusrat</td><td>85</td></tr>
-        <tr><td>7</td><td>Tanvir</td><td>82</td></tr>
-        <tr><td>8</td><td>Fahim</td><td>80</td></tr>
-        <tr><td>9</td><td>Rafi</td><td>78</td></tr>
-        <tr><td>10</td><td>Mim</td><td>75</td></tr>
-    </table>
-</div>
+<section>
+<h2>What is LoS 2.0?</h2>
+
+<button onclick="toggleDrop('d1')">Rules</button>
+<div id="d1" class="drop">Lorem ipsum rules...</div>
+
+<button onclick="toggleDrop('d2')">Resolution</button>
+<div id="d2" class="drop">Lorem ipsum resolution...</div>
+
+<button onclick="toggleDrop('d3')">Guidelines</button>
+<div id="d3" class="drop">Lorem ipsum guidelines...</div>
 </section>
 
-<!-- 🔷 TEAM BEHIND -->
-<section id="teamBehind">
-    <h2>👥 Team Behind</h2>
-    <p>Organizers, Judges, Volunteers</p>
-</section>
-<section id="contact">
-    <h2>📞 Contact With Us</h2>
+<footer>SSDC 2026 | Developer Nafis Jami</footer>
 
-    <div class="contact-container">
-
-        <!-- 🌐 Website -->
-        <a href="https://jamibd25.github.io/ssdc-los2.0/" target="_blank" class="contact-card website">
-            <i class="fas fa-globe"></i>
-            <p>Website</p>
-        </a>
-
-        <!-- 💬 Discord -->
-        <a href="https://discord.gg/k9nHB5HHH" target="_blank" class="contact-card discord">
-            <i class="fab fa-discord"></i>
-            <p>Discord</p>
-        </a>
-
-        <!-- 📧 Email -->
-        <a href="mailto:ssdc.ctg@gmail.com" class="contact-card email">
-            <i class="fas fa-envelope"></i>
-            <p>Email</p>
-        </a>
-
-        <!-- 📘 Facebook -->
-        <a href="https://www.facebook.com/share/1BJuhZcGU8/" target="_blank" class="contact-card facebook">
-            <i class="fab fa-facebook"></i>
-            <p>Facebook</p>
-        </a>
-
-    </div>
-</section>
-<!-- 🔥 JS -->
-<script src="./script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
