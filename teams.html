@@ -1,1 +1,56 @@
-hv
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teams</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<h2>Teams</h2>
+<a href="index.html">Home</a>
+</nav>
+
+<section>
+
+<table>
+<tr>
+<th>Rank</th><th>Team</th><th>Points</th><th>Details</th>
+</tr>
+
+<tr class="gold">
+<td>1</td><td>Alpha</td><td>95</td>
+<td><button onclick="toggleRow('t1')">▼</button></td>
+</tr>
+<tr id="t1" class="hidden">
+<td colspan="4">Members: A, B, C</td>
+</tr>
+
+<tr class="silver">
+<td>2</td><td>Voice</td><td>90</td>
+<td><button onclick="toggleRow('t2')">▼</button></td>
+</tr>
+<tr id="t2" class="hidden">
+<td colspan="4">Members: D, E, F</td>
+</tr>
+
+<tr class="bronze">
+<td>3</td><td>Kings</td><td>85</td>
+<td><button onclick="toggleRow('t3')">▼</button></td>
+</tr>
+<tr id="t3" class="hidden">
+<td colspan="4">Members: G, H, I</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>SSDC 2026 | Nafis Jami</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
