@@ -1,1 +1,40 @@
-h
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speakers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<h2>Speakers</h2>
+<a href="index.html">Home</a>
+</nav>
+
+<section>
+
+<table>
+<tr>
+<th>Rank</th><th>Name</th><th>Club</th><th>Details</th>
+</tr>
+
+<tr>
+<td>1</td><td>Rahim</td><td>SSDC</td>
+<td><button onclick="toggleRow('s1')">▼</button></td>
+</tr>
+<tr id="s1" class="hidden">
+<td colspan="4">Institution: Govt College, Debate Club</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>SSDC 2026 | Nafis Jami</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
