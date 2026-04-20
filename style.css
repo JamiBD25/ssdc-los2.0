@@ -235,6 +235,6 @@ padding:10px;
 }
 
 .nav-links.active{
-display:flex;
+display:flex !important ;
 }
 }
