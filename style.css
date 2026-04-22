@@ -238,3 +238,32 @@ padding:10px;
 display:flex !important ;
 }
 }
+/* 🔷 fixtures table improvement */
+table tr:hover {
+background: rgba(0,170,255,0.1);
+transition: 0.3s;
+}
+
+/* 🔷 motion dropdown row */
+.hidden{
+display:none;
+}
+
+/* 🔷 winner highlight */
+td.gold { color: gold; font-weight: bold; }
+td.silver { color: silver; font-weight: bold; }
+td.bronze { color: #cd7f32; font-weight: bold; }
+
+/* 🔷 button */
+.expand-btn{
+background:#00aaff;
+border:none;
+padding:5px 10px;
+color:black;
+border-radius:5px;
+cursor:pointer;
+}
+
+.expand-btn:hover{
+background:white;
+}
