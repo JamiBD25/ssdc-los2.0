@@ -267,3 +267,32 @@ cursor:pointer;
 .expand-btn:hover{
 background:white;
 }
+/* ================= TABLE STYLE ================= */
+
+/* table full width */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+/* header + data center */
+th, td{
+text-align:center;
+padding:12px;
+border:1px solid white; /* 🔥 white border */
+}
+
+/* header style */
+th{
+font-weight:bold;
+color:#00aaff;
+}
+
+/* ================= ROUND TITLE ================= */
+section h2{
+text-align:center;
+font-weight:bold;
+margin-bottom:15px;
+color:white;
+}
