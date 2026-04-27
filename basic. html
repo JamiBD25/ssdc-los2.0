@@ -12,11 +12,12 @@
 
 <body>
 
+<!-- 🔷 NAVBAR -->
 <div class="navbar">
 
-    <!-- 🔷 LOGO -->
     <div class="logo">
-        <img src="https://i.postimg.cc/tgnhPGyg/1773962923701.png" alt="logo">
+        <!-- 🔥 NEW LOGO -->
+        <img src="https://i.postimg.cc/qvPTHjhQ/Logo.png" alt="logo">
         <h2>LoS 2.0</h2>
     </div>
 
@@ -25,340 +26,30 @@
 
     <!-- 🔷 MENU -->
     <ul id="navLinks" class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="teams.html">Teams</a></li>
-<li><a href="speakers.html">Speakers</a></li>
-<li><a href="heads.html">Heads</a></li>
-<li><a href="fixtures.html">Fixtures</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="adjudicators.html">adjudicators</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li> 
+                                                <li><a href="materials.html">Materials</a></li>
     </ul>
 
 </div>
+
+<!-- 🔥 HERO SECTION -->
+<section class="hero">
+
+    <!-- 🔥 COVER IMAGE -->
+    <img src="https://i.postimg.cc/Pq1kXY1q/Cover.jpg" class="cover">
+
+</section>
+<!-- 🔷 FOOTER -->
 <footer>
 All rights reserved SSDC 2026 | Developer Nafis Jami
 </footer>
-<script src="script.js"></script >
+
+<!-- 🔥 JS -->
+<script src="script.js"></script>
+
 </body>
 </html>
-
-/* =========================
-   RESET + BASE
-========================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial, sans-serif;
-background:linear-gradient(180deg,#000,#050b1a,#000);
-color:white;
-scroll-behavior:smooth;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 18px;
-background:rgba(10,10,20,0.9);
-position:sticky;
-top:0;
-z-index:1000;
-border-bottom:1px solid rgba(0,170,255,0.2);
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:38px;
-height:38px;
-border-radius:50%;
-}
-
-.nav-links{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-transition:0.3s;
-}
-
-.nav-links a:hover{
-color:#00aaff;
-}
-
-/* =========================
-   HAMBURGER
-========================= */
-.menu-toggle{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
-
-/* =========================
-   HOME
-========================= */
-.home{
-text-align:center;
-padding:90px 20px;
-background:radial-gradient(circle,#0a1f44,#000);
-}
-
-.title{
-font-family:'Creepster',cursive;
-font-size:42px;
-color:#00aaff;
-text-shadow:0 0 15px #00aaff;
-}
-
-/* =========================
-   SECTION
-========================= */
-section{
-padding:50px 20px;
-}
-
-/* =========================
-   DROPDOWN
-========================= */
-.drop-btn{
-background:#111;
-border:1px solid #00aaff;
-color:white;
-padding:10px 15px;
-margin:5px;
-cursor:pointer;
-border-radius:8px;
-transition:0.3s;
-}
-
-.drop-btn:hover{
-background:#00aaff;
-color:black;
-}
-
-.drop{
-display:none;
-padding:12px;
-margin-top:5px;
-background:rgba(255,255,255,0.05);
-border-left:3px solid #00aaff;
-}
-
-/* =========================
-   TABLE
-========================= */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-th,td{
-padding:12px;
-border-bottom:1px solid rgba(255,255,255,0.2);
-}
-
-.gold{color:gold;}
-.silver{color:silver;}
-.bronze{color:#cd7f32;}
-
-.expand-btn{
-background:none;
-border:none;
-color:#00aaff;
-cursor:pointer;
-}
-
-/* hidden row */
-.hidden{
-display:none;
-}
-
-/* =========================
-   CARDS
-========================= */
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
-}
-
-.card{
-width:200px;
-background:rgba(255,255,255,0.05);
-padding:15px;
-border-radius:12px;
-text-align:center;
-transition:0.3s;
-box-shadow:0 0 10px rgba(0,150,255,0.1);
-}
-
-.card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(0,150,255,0.4);
-}
-
-.card img{
-width:90px;
-height:90px;
-border-radius:50%;
-border:2px solid #00aaff;
-margin-bottom:10px;
-}
-
-/* =========================
-   SOCIAL
-========================= */
-.social a{
-display:inline-block;
-margin:5px;
-color:white;
-text-decoration:none;
-transition:0.3s;
-}
-
-.social a:hover{
-color:#00aaff;
-}
-
-/* =========================
-   TIMELINE
-========================= */
-.timeline{
-margin-top:10px;
-font-size:13px;
-opacity:0.8;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer{
-text-align:center;
-padding:20px;
-background:#050a15;
-border-top:1px solid rgba(0,170,255,0.2);
-margin-top:30px;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-.nav-links{
-display:none;
-flex-direction:column;
-position:absolute;
-top:60px;
-right:0;
-background:#111;
-width:200px;
-padding:10px;
-}
-
-.nav-links.active{
-display:flex !important ;
-}
-}
-/* =========================
-   TABLE (FINAL CLEAN FIX)
-========================= */
-
-/* table layout */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-/* header + data */
-table th,
-table td{
-text-align:center;
-padding:12px;
-border:1px solid white; /* 🔥 white border */
-}
-
-/* header style */
-table th{
-font-weight:bold;
-color:#00aaff;
-background:rgba(0,170,255,0.1);
-}
-
-/* row hover */
-table tr:hover{
-background:rgba(0,170,255,0.1);
-transition:0.3s;
-}
-
-/* govt vs opposition color */
-.gov{
-color:#00ffcc;
-font-weight:bold;
-}
-
-.opp{
-color:#ff4d6d;
-font-weight:bold;
-}
-
-/* =========================
-   ROUND TITLE
-========================= */
-section h2{
-text-align:center;
-font-weight:bold;
-margin:20px 0;
-color:white;
-}
-/* ===== FINAL FORCE TABLE FIX ===== */
-
-table{
-width:100% !important;
-border-collapse:collapse !important;
-}
-
-/* সব cell */
-table, th, td{
-border:1px solid white !important;
-}
-
-/* text center */
-th, td{
-text-align:center !important;
-padding:12px !important;
-}
-
-/* header */
-th{
-font-weight:bold !important;
-color:#00aaff !important;
-}
-
-/* round title */
-section h2{
-text-align:center !important;
-font-weight:bold !important;
-margin:20px 0 !important;
-}
