@@ -355,7 +355,12 @@ margin:0;
 display:none !important;
 }
 
-
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
 
 /* button */
 .prep-btn{
