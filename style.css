@@ -356,45 +356,6 @@ display:none !important;
 }
 
 
-/* ===== FIXTURE FINAL WORKING ===== */
-
-.fixture{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px;
-margin:10px;
-border:1px solid black;
-border-radius:10px;
-background:rgba(255,255,255,0.05);
-}
-
-.team{
-width:50%;
-text-align:center;
-padding:10px;
-font-weight:bold;
-border-radius:8px;
-}
-
-.gov{
-background:rgba(0,255,200,0.1);
-color:#f5e4cb;
-}
-
-.opp{
-background:rgba(255,0,100,0.1);
-color:#f5e4cb;
-}
-/* =====  ❗prep batton ===== */
-/* center */
-.center{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #111; /* dark background for glow effect */
-}
 
 /* button */
 .prep-btn{
