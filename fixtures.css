@@ -140,42 +140,16 @@ font-size:14px;
 }
 
 /* 🔥 COLUMN WIDTH CONTROL */
-
-/* Rank ছোট */
+/* gov */
 th:nth-child(1),
 td:nth-child(1){
-width:10%;
+width:50%;
 }
 
-/* Name বড় */
+/* opp*/
 th:nth-child(2),
 td:nth-child(2){
-width:30%;
-font-weight:bold;
-}
-
-/* Played */
-th:nth-child(3),
-td:nth-child(3){
-width:12%;
-}
-
-/* Total */
-th:nth-child(4),
-td:nth-child(4){
-width:15%;
-}
-
-/* Avg */
-th:nth-child(5),
-td:nth-child(5){
-width:14%;
-}
-
-/* Details ছোট */
-th:nth-child(6),
-td:nth-child(6){
-width:10%;
+width:50%;
 }
 
 /* header */
@@ -214,63 +188,6 @@ font-weight:bold;
 color:#00aaff;
 font-weight:bold;
 }
-/* =========================
-   CARDS
-========================= */
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
-}
-
-.card{
-width:200px;
-background:rgba(200,185,161,0.05);
-padding:15px;
-border-radius:12px;
-text-align:center;
-transition:0.3s;
-box-shadow:0 0 10px rgba(129,102,68,0.2);
-}
-
-.card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(129,102,68,0.5);
-}
-
-.card img{
-width:90px;
-height:90px;
-border-radius:50%;
-border:2px solid #816644;
-margin-bottom:10px;
-}
-
-/* =========================
-   SOCIAL
-========================= */
-.social a{
-display:inline-block;
-margin:5px;
-color:#f5e4cb;
-text-decoration:none;
-transition:0.3s;
-}
-
-.social a:hover{
-color:#816644;
-}
-
-/* =========================
-   TIMELINE
-========================= */
-.timeline{
-margin-top:10px;
-font-size:13px;
-opacity:0.8;
-}
-
 /* =========================
    FOOTER
 ========================= */
