@@ -124,6 +124,7 @@ table{
 width:100%;
 border-collapse:collapse;
 margin-top:20px;
+table-layout:fixed;
 }
 
 /* সব cell */
@@ -134,7 +135,7 @@ border:1px solid black !important;
 /* text center */
 th, td{
 text-align:center;
-padding:12px;
+padding:8px;
 }
 
 /* header */
