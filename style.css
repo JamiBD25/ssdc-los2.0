@@ -386,3 +386,25 @@ color:#f5e4cb;
 background:rgba(255,0,100,0.1);
 color:#f5e4cb;
 }
+/* =====  ❗prep batton ===== */
+.prep-btn{
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.prep-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.prep-btn:active{
+  transform: scale(0.97);
+}
