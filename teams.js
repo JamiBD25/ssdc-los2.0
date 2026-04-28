@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function rankTeams() {
 
-    let table = document.querySelector("#teamsTable");
+    let table = document.querySelector("#table");
     if (!table) return;
 
     let rows = Array.from(table.querySelectorAll("tr"));
