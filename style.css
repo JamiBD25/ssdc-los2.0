@@ -354,3 +354,36 @@ margin:0;
 .hidden{
 display:none !important;
 }
+
+
+
+/* =========================
+   Fixtures 
+========================= */
+.fixture{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px;
+margin:10px 0;
+border:1px solid black;
+background:rgba(255,255,255,0.05);
+border-radius:10px;
+}
+
+/* teams 50% layout */
+.gov{
+width:50%;
+text-align:center;
+font-weight:bold;
+padding:10px;
+border-radius:8px;
+}
+
+.opp{
+width:50%;
+text-align:center;
+font-weight:bold;
+padding:10px;
+border-radius:8px;
+}
