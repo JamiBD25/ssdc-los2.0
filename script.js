@@ -69,3 +69,60 @@ function autoRank() {
     });
 }
 /* 🔥 team auto rank */
+
+document.addEventListener("DOMContentLoaded", function () {
+    autoRankTeams();
+});
+
+function autoRankTeams() {
+    let table = document.querySelector("table");
+
+    let allRows = Array.from(table.querySelectorAll("tr"));
+
+    let teams = [];
+
+    for (let i = 0; i < allRows.length; i++) {
+
+        let row = allRows[i];
+
+        // শুধু main row (header + hidden বাদ)
+        if (!row.querySelector("th") && !row.classList.contains("hidden")) {
+
+            let detailRow = allRows[i + 1];
+
+            let win = parseFloat(row.cells[3].innerText);
+            let points = parseFloat(row.cells[4].innerText);
+
+            teams.push({
+                main: row,
+                detail: detailRow,
+                win: win,
+                points: points
+            });
+        }
+    }
+
+    // 🔥 SORT LOGIC (Win first, then Points)
+    teams.sort((a, b) => {
+        if (b.win === a.win) {
+            return b.points - a.points; // tie breaker
+        }
+        return b.win - a.win;
+    });
+
+    // reset table (header safe)
+    let header = table.querySelector("tr");
+    table.innerHTML = "";
+    table.appendChild(header);
+
+    // rank assign
+    let rank = 1;
+
+    teams.forEach(team => {
+
+        team.main.cells[0].innerText = rank++;
+
+        table.appendChild(team.main);
+        table.appendChild(team.detail);
+    });
+}
