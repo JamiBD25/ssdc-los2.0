@@ -18,7 +18,8 @@ el.style.display = "block";
 function toggleRow(id){
 document.getElementById(id).classList.toggle("hidden");
 }
-/* 🔥 speaker auto rank */document.addEventListener("DOMContentLoaded", function () {
+/* 🔥 speaker auto rank */
+document.addEventListener("DOMContentLoaded", function () {
     autoRank();
 });
 
@@ -67,3 +68,4 @@ function autoRank() {
         table.appendChild(item.detail);
     });
 }
+/* 🔥 team auto rank */
