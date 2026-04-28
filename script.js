@@ -18,42 +18,52 @@ el.style.display = "block";
 function toggleRow(id){
 document.getElementById(id).classList.toggle("hidden");
 }
-/* 🔥 speaker auto rank */
-document.addEventListener("DOMContentLoaded", function () {
+/* 🔥 speaker auto rank */document.addEventListener("DOMContentLoaded", function () {
     autoRank();
 });
 
 function autoRank() {
     let table = document.querySelector("table");
 
-    // সব row collect (header বাদে + hidden বাদে মূল row)
-    let rows = Array.from(table.querySelectorAll("tr"))
-        .filter(row => !row.querySelector("th") && !row.classList.contains("hidden"));
+    // সব main row (hidden বাদে)
+    let rows = [];
 
-    // শুধু main rows sort করা (Avg অনুযায়ী)
-    rows.sort((a, b) => {
-        let avgA = parseFloat(a.querySelector(".avg").innerText);
-        let avgB = parseFloat(b.querySelector(".avg").innerText);
-        return avgB - avgA; // high to low
-    });
+    let allRows = Array.from(table.querySelectorAll("tr"));
 
-    // পুরানো rows remove (hidden সহ জোড়া রেখে)
-    rows.forEach(row => {
-        let next = row.nextElementSibling;
-        if (next && next.classList.contains("hidden")) {
-            table.appendChild(row);
-            table.appendChild(next);
-        } else {
-            table.appendChild(row);
+    for (let i = 0; i < allRows.length; i++) {
+        let row = allRows[i];
+
+        // main row detect (hidden না + header না)
+        if (!row.classList.contains("hidden") && !row.querySelector("th")) {
+
+            let hiddenRow = allRows[i + 1]; // detail row
+
+            rows.push({
+                main: row,
+                detail: hiddenRow,
+                avg: parseFloat(row.querySelector(".avg").innerText)
+            });
         }
-    });
+    }
 
-    // 🔥 Rank আবার সেট করা
+    // 🔥 sort by Avg (high to low)
+    rows.sort((a, b) => b.avg - a.avg);
+
+    // পুরা table clear except header
+    let header = table.querySelector("tr");
+    table.innerHTML = "";
+    table.appendChild(header);
+
+    // 🔥 rank + append back
     let rank = 1;
-    let updatedRows = Array.from(table.querySelectorAll("tr"))
-        .filter(row => !row.querySelector("th") && !row.classList.contains("hidden"));
 
-    updatedRows.forEach(row => {
-        row.cells[0].innerText = rank++;
+    rows.forEach(item => {
+
+        // rank update
+        item.main.cells[0].innerText = rank++;
+
+        // append main + detail
+        table.appendChild(item.main);
+        table.appendChild(item.detail);
     });
 }
