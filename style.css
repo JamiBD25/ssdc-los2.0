@@ -42,7 +42,7 @@ border-radius:50%;
 }
 
 .nav-links{
-display:flex;
+display:none;
 gap:15px;
 list-style:none;
 }
