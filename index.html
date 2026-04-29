@@ -49,17 +49,21 @@
 </section>
 
 <!-- 🔷 DROPDOWN SECTION -->
-<section>
-<button class="drop-btn" onclick="toggleDrop('r')">Rules</button>
-<div id="r" class="drop">Lorem ipsum rules...</div>
+<section class="dropdown-section">
 
-<button class="drop-btn" onclick="toggleDrop('r')">Rules</button>
-<div id="r" class="drop">Lorem ipsum rules...</div>
+<!-- Full width -->
+<button class="drop-btn full" onclick="toggleDrop('about')">About Los 2.0</button>
+<div id="about" class="drop">Lorem ipsum about...</div>
 
-<button class="drop-btn" onclick="toggleDrop('res')">Resolution</button>
+<!-- Row buttons -->
+<div class="row">
+  <button class="drop-btn" onclick="toggleDrop('rules')">Rules</button>
+  <button class="drop-btn" onclick="toggleDrop('res')">Resolution</button>
+  <button class="drop-btn" onclick="toggleDrop('g')">Guidelines</button>
+</div>
+
+<div id="rules" class="drop">Lorem ipsum rules...</div>
 <div id="res" class="drop">Lorem ipsum resolution...</div>
-
-<button class="drop-btn" onclick="toggleDrop('g')">Guidelines</button>
 <div id="g" class="drop">Lorem ipsum guidelines...</div>
 
 </section>
