@@ -68,3 +68,21 @@ function autoRank() {
         table.appendChild(item.detail);
     });
 }
+/* 🔥 dropdown batton */
+function toggleDrop(id){
+let all = document.querySelectorAll(".drop");
+
+all.forEach(el=>{
+  if(el.id !== id){
+    el.style.display = "none";
+  }
+});
+
+let target = document.getElementById(id);
+
+if(target.style.display === "block"){
+  target.style.display = "none";
+}else{
+  target.style.display = "block";
+}
+}
