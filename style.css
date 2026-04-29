@@ -92,20 +92,55 @@ padding:50px 20px;
 /* =========================
    DROPDOWN
 ========================= */
+.dropdown-section{
+width:100%;
+max-width:600px;
+margin:auto;
+}
+
+/* Full width button */
+.drop-btn.full{
+width:100%;
+display:block;
+}
+
+/* Row for 3 buttons */
+.row{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+/* 3 equal buttons */
+.row .drop-btn{
+flex:1;
+}
+
+/* your original style */
 .drop-btn{
 background:#332C24;
 border:1px solid #684B35;
 color:#f5e4cb;
 padding:10px 15px;
-margin:5px;
+margin:5px 0;
 cursor:pointer;
 border-radius:8px;
 transition:0.3s;
+font-weight:bold;
 }
 
 .drop-btn:hover{
 background:#684B35;
 color:white;
+}
+
+/* dropdown content */
+.drop{
+display:none;
+padding:10px;
+background:rgba(255,255,255,0.05);
+margin:5px 0 10px 0;
+border-radius:8px;
 }
 
 .drop{
