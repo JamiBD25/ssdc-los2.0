@@ -49,25 +49,46 @@
 </section>
 
 <!-- 🔷 DROPDOWN SECTION -->
+<!-- 🔷 DROPDOWN SECTION -->
 <section class="dropdown-section">
 
-<!-- Full width -->
 <button class="drop-btn full" onclick="toggleDrop('about')">About Los 2.0</button>
-<div id="about" class="drop">Lorem ipsum about...</div>
+<div id="about" class="drop">About content...</div>
 
-<!-- Row buttons -->
 <div class="row">
-  <button class="drop-btn" onclick="toggleDrop('rules')">Rules</button>
-  <button class="drop-btn" onclick="toggleDrop('res')">Resolution</button>
-  <button class="drop-btn" onclick="toggleDrop('g')">Guidelines</button>
+<button class="drop-btn" onclick="toggleDrop('rules')">Rules</button>
+<button class="drop-btn" onclick="toggleDrop('res')">Resolution</button>
+<button class="drop-btn" onclick="toggleDrop('g')">Guidelines</button>
 </div>
 
-<div id="rules" class="drop">Lorem ipsum rules...</div>
-<div id="res" class="drop">Lorem ipsum resolution...</div>
-<div id="g" class="drop">Lorem ipsum guidelines...</div>
+<div id="rules" class="drop">Rules content...</div>
+<div id="res" class="drop">Resolution content...</div>
+<div id="g" class="drop">Guidelines content...</div>
 
 </section>
 
+<!-- 🔥 FINAL JAVASCRIPT -->
+<script>
+
+function toggleDrop(id){
+  let all = document.querySelectorAll(".drop");
+
+  all.forEach(el=>{
+    if(el.id !== id){
+      el.style.display = "none";
+    }
+  });
+
+  let target = document.getElementById(id);
+
+  if(target.style.display === "block"){
+    target.style.display = "none";
+  }else{
+    target.style.display = "block";
+  }
+}
+
+</script>
 <!-- 🔷 FOOTER -->
 <footer>
 All rights reserved SSDC 2026 | Developer Nafis Jami
