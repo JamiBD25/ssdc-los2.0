@@ -1,20 +1,61 @@
-/* 🔥 hamburger menu */
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("active");
-}
+/* 🔥 CHECK JS LOADED */
+console.log("index.js loaded ✅");
 
-/* 🔥 dropdown */
-function toggleDrop(id){
-let el = document.getElementById(id);
+/* 🔥 RUN AFTER PAGE LOAD */
+document.addEventListener("DOMContentLoaded", function(){
 
-if(el.style.display === "block"){
-el.style.display = "none";
-}else{
-el.style.display = "block";
-}
-}
+  /* =========================
+     🔥 HAMBURGER MENU
+  ========================= */
+  window.toggleMenu = function(){
+    let nav = document.getElementById("navLinks");
+    if(nav){
+      nav.classList.toggle("active");
+    }else{
+      console.error("navLinks not found ❌");
+    }
+  };
 
-/* 🔥 table expand */
-function toggleRow(id){
-document.getElementById(id).classList.toggle("hidden");
-}
+
+  /* =========================
+     🔥 DROPDOWN (ONE OPEN)
+  ========================= */
+  window.toggleDrop = function(id){
+
+    let all = document.querySelectorAll(".drop");
+
+    all.forEach(el=>{
+      if(el.id !== id){
+        el.style.display = "none";
+      }
+    });
+
+    let target = document.getElementById(id);
+
+    if(!target){
+      console.error("Dropdown ID not found: " + id);
+      return;
+    }
+
+    if(target.style.display === "block"){
+      target.style.display = "none";
+    }else{
+      target.style.display = "block";
+    }
+  };
+
+
+  /* =========================
+     🔥 TABLE ROW EXPAND
+  ========================= */
+  window.toggleRow = function(id){
+    let row = document.getElementById(id);
+
+    if(row){
+      row.classList.toggle("hidden");
+    }else{
+      console.error("Row ID not found: " + id);
+    }
+  };
+
+});
