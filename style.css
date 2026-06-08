@@ -182,20 +182,20 @@ font-size:14px;
 /* Rank ছোট */
 th:nth-child(1),
 td:nth-child(1){
-width:10%;
+width:17%;
 }
 
 /* Name বড় */
 th:nth-child(2),
 td:nth-child(2){
-width:30%;
+width:27%;
 font-weight:bold;
 }
 
 /* Played */
 th:nth-child(3),
 td:nth-child(3){
-width:12%;
+width:17%;
 }
 
 /* Total */
