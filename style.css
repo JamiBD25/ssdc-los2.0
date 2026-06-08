@@ -182,7 +182,7 @@ font-size:14px;
 /* Rank ছোট */
 th:nth-child(1),
 td:nth-child(1){
-width:17%;
+width:15%;
 }
 
 /* Name বড় */
@@ -207,7 +207,7 @@ width:15%;
 /* point */
 th:nth-child(5),
 td:nth-child(5){
-width:16%;
+width:18%;
 }
 
 /* Details ছোট */
