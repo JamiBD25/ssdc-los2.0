@@ -195,19 +195,19 @@ font-weight:bold;
 /* Played */
 th:nth-child(3),
 td:nth-child(3){
-width:17%;
+width:15%;
 }
 
-/* Total */
+/* win */
 th:nth-child(4),
 td:nth-child(4){
 width:15%;
 }
 
-/* Avg */
+/* point */
 th:nth-child(5),
 td:nth-child(5){
-width:14%;
+width:16%;
 }
 
 /* Details ছোট */
