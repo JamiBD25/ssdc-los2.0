@@ -37,6 +37,7 @@ function toggleRow(id){
 document.getElementById(id).classList.toggle("hidden");
 } 
 /* 🔥 teams auto rank */
+/*
 document.addEventListener("DOMContentLoaded", function () {
     rankTeams();
 });
@@ -100,3 +101,4 @@ function rankTeams() {
         table.appendChild(team.detail);
     });
 }
+*/
