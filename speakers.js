@@ -36,11 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
         el.style.display = "none";
     });
 });
+
 /* 🔥 AUTO RANK */
 document.addEventListener("DOMContentLoaded", function () {
 
     // hide all dropdown rows
-    document.querySelectorAll(".hidden").forEach(el=>{
+    document.querySelectorAll(".hidden").forEach(el => {
         el.style.display = "none";
     });
 
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function autoRank() {
+
     let table = document.querySelector("table");
     if (!table) return;
 
@@ -64,33 +66,51 @@ function autoRank() {
             let avgEl = row.querySelector(".avg");
 
             if (avgEl && detailRow) {
+
                 rows.push({
                     main: row,
                     detail: detailRow,
                     avg: parseFloat(avgEl.innerText)
                 });
+
                 i++;
             }
         }
     }
 
+    // Sort by Average (Highest First)
     rows.sort((a, b) => b.avg - a.avg);
 
     let header = table.querySelector("tr");
+
     table.innerHTML = "";
     table.appendChild(header);
 
     let rank = 1;
+    let position = 0;
+    let prevAvg = null;
 
     rows.forEach(item => {
 
-        item.main.cells[0].innerText = rank++;
+        position++;
+
+        // Same AVG = Same Rank
+        if (prevAvg !== null && item.avg !== prevAvg) {
+            rank = position;
+        }
+
+        item.main.cells[0].innerText = rank;
+
+        prevAvg = item.avg;
+
         item.detail.classList.add("hidden");
+        item.detail.style.display = "none";
 
         table.appendChild(item.main);
         table.appendChild(item.detail);
     });
 }
+
 /* 🔥 search box*/
 function searchSpeaker() {
 
