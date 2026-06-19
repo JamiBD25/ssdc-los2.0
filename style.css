@@ -459,6 +459,28 @@ outline:none;
 border-color:#4CAF50;
 box-shadow:0 0 5px rgba(76,175,80,0.5);
 }
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 1200px;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-box:focus {
+  border-color: #007bff;
+}
 /* =========================
    footer
 ========================= */
