@@ -611,3 +611,34 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 .dev-link:hover{
   opacity:0.8;
 }
+
+/* =========================
+   result round declar
+========================= */
+.results-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: fit-content;
+    margin: 20px auto;
+    padding: 14px 28px;
+
+    background: linear-gradient(135deg, #fff3cd, #ffe69c);
+    border: 2px solid #ffc107;
+    border-radius: 50px;
+
+    box-shadow: 0 6px 18px rgba(255, 193, 7, 0.25);
+}
+
+.warning-icon{
+    font-size: 24px;
+}
+
+.banner-text{
+    font-size: 24px;
+    font-weight: 700;
+    color: #856404;
+    letter-spacing: 0.5px;
+}
