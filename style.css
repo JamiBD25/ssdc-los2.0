@@ -642,3 +642,63 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
     color: #856404;
     letter-spacing: 0.5px;
 }
+/* =========================
+   Adj Announced DIV
+========================= */
+
+.adjudicators-announcement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.announcement-box {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 40px 25px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.announcement-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.highlight-text {
+  font-size: 1.4rem;
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #eaeaea;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.fb-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #1877f2, #0d5fd8);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.fb-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(24,119,242,0.35);
+}
