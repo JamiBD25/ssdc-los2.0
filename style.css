@@ -268,29 +268,29 @@ font-weight:bold;
     grid-template-columns:1fr;
   }
 }
-
 .adj-card{
-  background:#1b1b1b;
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:10px;
-  padding:2px;
-  text-align:center;
-  transition:0.3s ease;
-  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  background: #1b1b1b;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.35s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  overflow: hidden;
 }
 
 .adj-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 0 20px rgba(169,113,66,0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(169,113,66,0.45);
 }
 
 .adj-card img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:cover;
-  border-radius:15px;
+  width: 100%;
+  aspect-ratio: 1309 / 1536; /* original image ratio */
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
 }
-
 /* ======================
    RESPONSIVE
 ====================== */
